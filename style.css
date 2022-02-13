@@ -4,6 +4,7 @@ body {
   background-color: #fff;
   color: #6F420E;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 p {
