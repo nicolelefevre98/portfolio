@@ -87,6 +87,7 @@ h3 {
   font-size: 150%;
 }
 
+/*
 h4 {
   text-align: center;
   padding: 30px;
@@ -95,6 +96,7 @@ h4 {
   font-weight: 300;
   font-size: 120%;
 }
+*/
 
 .nav-button {
   padding-right: 40px;
@@ -568,6 +570,11 @@ h4 {
   .wrapper {
     height: 40vh;
   }
+
+  .nav-button {
+    font-size: 8px;
+  }
+
 }
 
 .navbar-fixed-top.scrolled {
