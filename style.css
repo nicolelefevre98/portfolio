@@ -3,50 +3,83 @@ html{
   scroll-behavior: smooth;
 }
 
+
+
+
+/* Body*/
 body {
-  margin: 0;
-  background-color: #fff;
-  color: #6F420E;
-  font-family: "Poppins", sans-serif;
+  background-image: url("img/background3.png");
+    background-size:100%;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    max-width: 100%;
+    max-height: 100%;
+    font-family: 'Montserrat';
+    background-color: #000;
+    color: #fff;
   scroll-behavior: smooth;
 }
-
+.logo { 
+  max-width: 120px;
+  background-image: ("logo.png"); 
+  margin-left: 100px;
+  margin-top: -80px;
+}
 p {
   font-family: Helvetica;
   font-size: 25px;
-  padding-bottom: 10px;
 }
 
 
-.project-tile {
-  opacity: 0.5;
-  border-style: dotted;
-  border-color: #6F420E;
-  border-width: 2px;
-}
 
-.project-tile:hover {
-  opacity: 0.8;
-}
 
-.wrapper {
-  background-image: url("img/mig1.jpg");
-  background-size: cover;
-  height: 70vh;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Navn med typing og blink */
+.wrapper1 {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0px;
+  margin-left: 120px;
+  margin-top: 100px;
 }
 
 .typing-demo {
-  width: 16ch;
+  width: 6ch;
   animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 5em;
+  font-size: 100px;
   color: #fff;
+}
+
+h4 {
+  font-family: "arial";
+  margin-bottom: 200px;
+  margin-top: 100px;
+  
+}
+
+h4 .h1color {
+  color: #FACED6;
 }
 
 @keyframes typing {
@@ -55,20 +88,96 @@ p {
   }
 }
 @keyframes blink {
-  50% {
+  20% {
     border-color: transparent;
   }
 }
-h1 {
-  text-align: center;
-  padding-top: 30vh;
-  font-family: 'Lato', sans-serif;
-  font-size: 450%;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-weight: 100;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* About me */
+ .container3 {
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px;
 }
 
+.row {
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: 130px;
+  background-color: #2C2C2C;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: -15px;
+  display: flex;
+  justify-content: center;
+  box-shadow:  5px 5px 20px;
+}
+
+h1{
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  margin: 0%;
+  padding-right: 100px;
+  justify-content: center;
+  margin: 50px;
+  color: #fff;
+}
+
+h1 .h1color {
+  color: #FACED6;
+}
+
+h2{
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  margin-left: 30px;
+  margin-top: 200px;
+  margin-bottom: 50px;
+  /*justify-content: center;
+  text-align: center;*/
+  color: #fff;
+  font-size: 20px;
+  
+}
+
+.about-me {
+  max-width: 80ch;
+  margin-right: 20px;
+  
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Headlins */
 h2 {
   text-align: center;
   font-family: 'Lato', sans-serif;
@@ -85,36 +194,43 @@ h3 {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 150%;
+  color: #fff;
 }
 
-/*
-h4 {
-  text-align: center;
-  padding: 30px;
-  font-family: 'Lato', sans-serif;
-  text-transform: uppercase;
-  font-weight: 300;
-  font-size: 120%;
-}
-*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Navbar */
 .nav-button {
   padding-right: 40px;
   text-decoration: none;
   text-transform: uppercase;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  color: #6F420E;
+  color: #FACED6;
   scroll-behavior: smooth;
 }
 
 .nav-button:hover {
-  color: #DB8963;
+  color: #fff;
 }
 
 #navbar {
-  background: #fff;
-  box-shadow:  3px 3px 10px;
+  background: transparent;
+  margin-top: -10px;
+  /*box-shadow:  3px 3px 10px;*/
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -123,7 +239,41 @@ h4 {
   z-index: 10;
   scroll-behavior: smooth;
 }
+.navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* flip card */
 #projects {
   justify-content: center;
   align-content: center;
@@ -186,10 +336,10 @@ h4 {
 }
 
 .back {
-  background: #EAE0D8;
-  background: -webkit-linear-gradient(45deg, #EAE0D8 0%, #E2BC9E 100%);
-  background: -o-linear-gradient(45deg, #EAE0D8 0%, #E2BC9E 100%);
-  background: linear-gradient(45deg, #EAE0D8 0%, #E2BC9E 100%);
+  background: #FACED6;
+  background: -webkit-linear-gradient(45deg, #FACED6 0%, #DD6379 100%);
+  background: -o-linear-gradient(45deg, #FACED6 0%, #DD6379 100%);
+  background: linear-gradient(45deg, #FACED6 0%, #DD6379 100%);
 }
 
 .front:after {
@@ -295,22 +445,42 @@ h4 {
 }
 
 
-.row {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.row2 {
   display: flex;
   margin: 0 5em;
   justify-content: center;
 }
 
-.about-me {
+.about-me1 {
   max-width: 100ch;
+
 }
 
 .site-footer {
   width: 100%;
-  background: #26272b;
+  background: #2E2E2E;
   font-size: 15px;
   line-height: 24px;
-  color: #737373;
+  color: #969696;
 }
 
 .site-footer hr {
@@ -323,7 +493,7 @@ h4 {
 }
 
 .site-footer h6 {
-  color: #fff;
+  color: #FACED6;
   font-size: 16px;
   text-transform: uppercase;
   margin-top: 40px;
@@ -350,14 +520,16 @@ h4 {
 .footer-links {
   padding-left: 0;
   list-style: none;
+  
 }
 
 .footer-links li {
   display: block;
+  
 }
 
 .footer-links a {
-  color: #737373;
+  color:#fff;
 }
 
 .footer-links a:active, .footer-links a:focus, .footer-links a:hover {
@@ -390,6 +562,117 @@ h4 {
   font-size: 15px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsiv*/
+
+/*Responsiv tablet str*/
+@media (max-width: 768px){
+
+
+  .logo { 
+    max-width: 80px;
+    margin-left: 20px;
+}
+
+.row{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ h1{
+  padding-right: 0px;
+  font-size: 25px;
+  text-align: center;
+}
+
+h2{
+  margin-top: 100px;
+  margin-left: 230px;
+}
+.wrapper {
+  display: flex;
+  margin-right: -20px;
+  margin-top: 150px;
+  justify-content: center;
+}
+
+
+.typing-demo {
+  width: 2ch;
+  font-size: 12px; 
+}
+}
+
+
+@media (max-width: 425px){
+  body {
+    background-color: #262626;
+  }
+  
+  .logo { 
+    max-width: 50px;
+    margin-left: 20px;
+}
+
+h1 {
+  margin: 0px;
+}
+
+
+
+ h1{
+  margin-top: 20px;
+  padding-right: 0px;
+  font-size: 20px;
+  text-align: center;
+}
+
+h2{
+  margin-top: 100px;
+  margin-left: 60px;
+}
+
+h6 {
+  display: none;
+}
+
+.about-me{
+  margin-right: 0px;
+}
+
+.text-justify.about-me1 {
+  display: none;
+  font-size: 5px;
+}
+
+h4{
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+h3 {
+  margin: 0px;
+}
+}
+
+
+
 @media (max-width: 991px) {
   .site-footer [class^=col-] {
     margin-bottom: 30px;
@@ -407,7 +690,8 @@ h4 {
   .text-justify {
     display: block;
     padding: 0px;
-    font-size: 12px;
+    font-size: 10px;
+    text-align: center;
   }
 
   .nav-button {
@@ -577,9 +861,5 @@ h4 {
 
 }
 
-.navbar-fixed-top.scrolled {
-  background-color: #fff !important;
-  transition: background-color 200ms linear;
-}
 
 
